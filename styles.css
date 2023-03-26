@@ -1,0 +1,438 @@
+html,
+body {
+  background-color: black;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  border-radius: 15%;
+  border: solid 5px rgb(241, 53, 53);
+  background: linear-gradient(90deg, #000, #323232);
+  margin: 10% auto 0;
+  display: inline-block;
+  position: relative;
+  height: 500px;
+  width: 500px;
+
+  animation-name: dado;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  top: 5%;
+  left: 37%;
+  filter: blur(1.5px);
+  font-size: 50px;
+}
+
+.container .uno {
+  border-radius: 50%;
+  background: yellow;
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.container .linea-uno {
+  border-radius: 50%;
+  border: solid 5px rgb(18, 245, 18);
+  height: 60px;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+
+  animation-name: linea-uno;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linea-uno {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    border: solid 3px rgb(225, 248, 94);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    border: solid 5px rgb(253, 118, 235);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  75% {
+    border: solid 3px rgb(145, 250, 59);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    border: solid 5px rgb(140, 26, 247);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.container .dos {
+  border-radius: 50%;
+  background: blue;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.container .linea-dos {
+  border-radius: 50%;
+  border: solid 5px rgb(226, 247, 40);
+  height: 60px;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+
+  animation-name: linea-dos;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linea-dos {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    border: solid 3px rgb(106, 248, 62);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    border: solid 5px rgb(241, 85, 28);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  75% {
+    border: solid 3px rgb(53, 240, 240);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    border: solid 5px rgb(253, 96, 201);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.container .tres {
+  border-radius: 50%;
+  background: rgb(14, 231, 14);
+  height: 50px;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.container .linea-tres {
+  border-radius: 50%;
+  border: solid 5px rgb(255, 158, 13);
+  height: 60px;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+
+  animation-name: linea-tres;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linea-tres {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    border: solid 3px rgb(101, 8, 189);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    border: solid 5px rgb(245, 37, 37);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  75% {
+    border: solid 3px rgb(24, 182, 108);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    border: solid 5px rgb(230, 7, 137);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.container .cuatro {
+  border-radius: 50%;
+  background: rgb(252, 105, 7);
+  height: 50px;
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 80%;
+  left: 80%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.container .linea-cuatro {
+  border-radius: 50%;
+  border: solid 5px rgb(11, 15, 253);
+  height: 60px;
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 80%;
+  left: 80%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+
+  animation-name: linea-cuatro;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linea-cuatro {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    border: solid 3px rgb(61, 233, 39);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    border: solid 5px rgb(236, 9, 77);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  75% {
+    border: solid 3px rgb(151, 51, 245);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    border: solid 5px rgb(33, 247, 229);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.container .centro {
+  border-radius: 50%;
+  background: red;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 50px;
+}
+
+.container .linea-centro {
+  border-radius: 50%;
+  border: solid 5px fuchsia;
+  height: 60px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 60px;
+
+  animation-name: linea-centro;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes linea-centro {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    border: solid 3px rgb(80, 106, 250);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    border: solid 5px coral;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  75% {
+    border: solid 3px rgb(222, 250, 65);
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  100% {
+    border: solid 5px rgb(255, 47, 47);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@keyframes dado {
+  0% {
+    border: solid 5px rgb(241, 53, 53);
+  }
+  10% {
+    border: solid 5px rgb(61, 233, 39);
+  }
+  20% {
+    border: solid 5px rgb(241, 245, 31);
+  }
+  30% {
+    border: solid 5px rgb(236, 9, 77);
+  }
+  40% {
+    border: solid 5px rgb(151, 51, 245);
+  }
+  50% {
+    border: solid 5px rgb(65, 231, 253);
+  }
+  60% {
+    border: solid 5px rgb(28, 84, 240);
+  }
+  70% {
+    border: solid 5px rgb(78, 2, 148);
+  }
+  80% {
+    border: solid 5px rgb(231, 74, 252);
+  }
+  90% {
+    border: solid 5px rgb(248, 23, 147);
+  }
+  100% {
+    border: solid 5px rgb(235, 72, 8);
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: 400px;
+    width: 400px;
+  }
+  .container .centro,
+  .container .uno,
+  .container .dos,
+  .container .tres,
+  .container .cuatro {
+    height: 40px;
+    width: 40px;
+  }
+  .container .linea-centro,
+  .container .linea-uno,
+  .container .linea-dos,
+  .container .linea-tres,
+  .container .linea-cuatro {
+    height: 50px;
+    width: 50px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 515px) {
+  .container {
+    height: 300px;
+    width: 300px;
+  }
+  .container .centro,
+  .container .uno,
+  .container .dos,
+  .container .tres,
+  .container .cuatro {
+    height: 30px;
+    width: 30px;
+  }
+  .container .linea-centro,
+  .container .linea-uno,
+  .container .linea-dos,
+  .container .linea-tres,
+  .container .linea-cuatro {
+    height: 40px;
+    width: 40px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    height: 200px;
+    width: 200px;
+  }
+  .container .centro,
+  .container .uno,
+  .container .dos,
+  .container .tres,
+  .container .cuatro {
+    height: 20px;
+    width: 20px;
+  }
+  .container .linea-centro,
+  .container .linea-uno,
+  .container .linea-dos,
+  .container .linea-tres,
+  .container .linea-cuatro {
+    height: 30px;
+    width: 30px;
+  }
+  h1 {
+    top: 5%;
+    left: 28%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 311px) {
+  .container {
+    height: 100px;
+    width: 100px;
+  }
+  .container .centro,
+  .container .uno,
+  .container .dos,
+  .container .tres,
+  .container .cuatro {
+    height: 10px;
+    width: 10px;
+  }
+  .container .linea-centro,
+  .container .linea-uno,
+  .container .linea-dos,
+  .container .linea-tres,
+  .container .linea-cuatro {
+    height: 20px;
+    width: 20px;
+  }
+  h1 {
+    display: none;
+  }
+}
